@@ -34,7 +34,7 @@ app.get('/migrate-edge-app',function(req,resp){
 	console.log("here");
 	client = new Client();
 	var args = {
-	  headers:{"Authorization": "Basic c2FydGhha0BhcGlnZWUuY29tOldlbGNvbWVfMTIz"}
+	  headers:{"Authorization": config.base64encodedCredentials}
 	};
 	var url="https://api.enterprise.apigee.com/v1/o/pixvy/apps/"+req.query.appId
 	client.get(url, args,function(data, response){
