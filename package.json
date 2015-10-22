@@ -1,0 +1,17 @@
+{
+  "name": "blackboard",
+  "version": "1.0.0",
+  "description": "admin app to query against custom attributes",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "sarthak gangopadhyay",
+  "license": "ISC",
+  "dependencies": {
+        "express":"3.x.x",
+        "usergrid":"x.x.x",
+        "argo":"x.x.x",
+        "node-rest-client":"x.x.x"
+    }
+}
